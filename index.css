@@ -78,6 +78,11 @@ h1{
     position: relative;
 }
 
+.display-color-text{
+    flex-direction: column;
+    position: relative;
+}
+
 .display-color-box{
     flex: 1;
     max-height: 400px;
@@ -96,6 +101,11 @@ h1{
     transition: 0.25s;
 }
 
+.display-color-hex:active{
+    transition: 0s;
+    background-color: lightgreen;
+}
+
 .display-color-box,
 .display-color-hex{
     padding: 20px 10px;
@@ -107,10 +117,9 @@ h1{
     z-index: 1;
     background-color: white;
     padding: 4px 8px;
-    bottom: 60px;
+    top: -50px;
     border-radius: 4px;
     opacity: 0;
-    left: 0px;
 }
 /* show tooltip when hovering over display color hex */
 .display-color-container:has(.display-color-hex:hover) .tooltip{
