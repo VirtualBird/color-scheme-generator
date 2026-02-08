@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Color Picker</h1>
+        <div id="color-options">
+            <form id="color-options-form">
+                <input type="color" id="seed-color" name="seed-color">
+                <select name="color-scheme" id="color-scheme">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button id="color-scheme-btn">Get color scheme</button>
+            </form>
+        </div>
+        <div id="display-colors">
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>

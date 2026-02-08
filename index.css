@@ -1,0 +1,120 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    background: #E5E5E5;
+    border: solid 1px #D1D5DB;
+    height: 42px;
+    min-width: 62px;
+    cursor: pointer;
+    
+    transition: 0.25s;
+}
+
+input:hover{
+    background-color: lightblue;
+    transition: 0.25s;
+}
+
+select{
+    padding: 12px 6px;
+    border-radius: 6px;
+    border: solid 1px #D1D5DB;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+}
+
+button{
+    padding: 14px 10px;
+    border: solid 1px #D1D5DB;
+    border-radius: 4px;
+    background: #FFFFFF;
+    cursor: pointer;
+    font-size: 0.75rem;
+    transition: 0.25s;
+    white-space: nowrap;
+}
+
+button:hover{
+    transition: 0.25s;
+    background-color: lightblue;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.25rem;
+}
+
+#color-options-form{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    padding: 20px 0px;
+    margin-left: 20px;
+    margin-right: 20px;;
+    align-items: center;
+}
+
+#display-colors{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.display-color-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+}
+
+.display-color-box{
+    flex: 1;
+    max-height: 400px;
+}
+
+.display-color-hex{
+    text-align: center;
+    font-size: 0.75rem;
+    transition: 0.5s;
+    position: relative;   
+}
+
+.display-color-hex:hover{
+    cursor: pointer;
+    background-color: lightskyblue;
+    transition: 0.25s;
+}
+
+.display-color-box,
+.display-color-hex{
+    padding: 20px 10px;
+}
+
+.tooltip{
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    padding: 4px 8px;
+    bottom: 60px;
+    border-radius: 4px;
+    opacity: 0;
+    left: 0px;
+}
+/* show tooltip when hovering over display color hex */
+.display-color-container:has(.display-color-hex:hover) .tooltip{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s;
+}
