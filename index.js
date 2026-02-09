@@ -52,9 +52,7 @@ function renderColors(){
             </div>
             <div class="display-color-text">
                 <span class="tooltip">Copy to Clipboard</span>
-                <div class="display-color-hex">
-                    ${color.hex}
-                </div>
+                <div class="display-color-hex">${color.hex}</div>
             </div>
             
         </div>`
